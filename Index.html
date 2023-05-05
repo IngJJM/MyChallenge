@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>My First Chagenlle</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img class="logoImg" src="img/Logo.png" />
+        <h1 class="title">ENCRIPTADOR</h1>
+      </div>
+      <div class="encriptar">
+        <texttarea
+          class="inputTexto"
+          id="inputTexto"
+          type="text"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"></texttarea>
+      </div>
+      <div class="conditions">
+        <p>Solo minusculas y sin acentos.</p>
+      </div>
+      <div class="buttons">
+        <button type="button" id="btn-encriptar" onclick="encriptar()">
+          Encriptar
+        </button>
+        <button type="button" id="btn-desencriptar" onclick="desencriptar()">
+          Desencriptar
+        </button>
+      </div>
+      <div class="areaDesencriptar">
+        <img src="img/Muñeco.png" id="imgContainer3" />
+        <div class="mensajes" id="mensajes">
+          <h2 id="txt">Ningún mensaje fue encontrado</h2>
+          <p id="txt2">Ingrese el texto que desees encriptar o desencriptar.</p>
+        </div>
+          <textotarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="mensaje"></textotarea>
+      </div>
+        <button id="copiar" type="button" name="button" onclick="copiar()">
+          !Copiar¡
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
