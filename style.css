@@ -12,7 +12,7 @@
   width: 100%;
   float: left;
 }
-#inputTexto {
+.texto {
   position: absolute;
   width: 42%;
   height: 60%;
@@ -26,11 +26,11 @@
   line-height: 150%;
   background-color: #f1f3f8;
 }
-#inputTexto::placeholder {
+.texto::placeholder {
   color: #0a3871;
 }
-#inputTexto:focus,
-.inputTexto:active {
+.texto:focus,
+.texto:active {
   border: none;
   outline: none;
 }
@@ -109,12 +109,12 @@
   width: 24.5%;
   padding: 1.8%;
 }
-.areaDesencriptar {
+.encriptado {
   display: flex;
   justify-content: center;
   position: absolute;
   width: 30%;
-  height: 70%;
+  height: 90%;
   left: 60%;
   top: 5%;
   background: #0733f5;
@@ -122,7 +122,7 @@
   box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.08);
   border-radius: 32px;
 }
-.mensajes {
+.mensaje-encriptado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,7 +134,7 @@
   top: 65%;
   text-align: center;
 }
-.mensajes h2 {
+.mensaje-encriptado h2{
   width: 60%;
   font-family: "Inter";
   font-style: normal;
@@ -144,7 +144,7 @@
   text-align: center;
   color: #343a40;
 }
-.mensajes p {
+.mensaje-encriptado p {
   width: 80%;
   font-family: "Inter";
   font-style: normal;
@@ -154,7 +154,7 @@
   text-align: center;
   color: #495057;
 }
-#imgContainer3 {
+.encriptado img {
   position: absolute;
   width: 80%;
   height: 50%;
@@ -186,14 +186,14 @@
     display: flex;
     flex-direction: row;
   }
-  .container2 {
+  .encriptar {
     width: 100%;
   }
-  #inputTexto {
-    width: 45%;
+  .texto {
+    width: 80%;
     height: 60%;
     left: 10%;
-    top: 9%;
+    top: 5%;
   }
   .conditions {
     width: 80%;
@@ -219,17 +219,17 @@
     width: 47.5%;
     padding: 1.8%;
   }
-  #encriptar {
+  .encriptado {
     width: 80%;
     height: 15%;
     left: 10%;
     top: 80%;
   }
-  #right {
+ .mensaje-encriptado {
     width: 100%;
     top: 5%;
   }
-  #imgContainer3 {
+ .encriptado img {
     top: 0;
     display: none;
     visibility: hidden;
