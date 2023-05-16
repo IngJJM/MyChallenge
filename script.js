@@ -3,6 +3,7 @@ function encriptar(){
     var txt=document.getElementById("txt");
     var txt2=document.getElementById("txt2");
     var muñeco=document.getElementById("muñeco");
+    
 
     var txtCifrado=texto.replace(/e/igm,"enter");
     var txtCifrado=txtCifrado.replace(/o/igm,"ober");
@@ -23,6 +24,7 @@ function encriptar(){
         txt.textContent="Ningún mensaje fue encontrado";
         txt2.textContent="Ingrese el texto que desees encriptar o desencriptar.";
         alert("Debes ingresar algún texto");
+        document.getElementById("mensaje").value="";
     }
 
 }
@@ -34,11 +36,21 @@ function desencriptar(){
     var txtCifrado=txtCifrado.replace(/ai/igm,"a");
     var txtCifrado=txtCifrado.replace(/ufat/igm,"u");
 
-    document.getElementById("muñeco").style.display="none";
-    document.getElementById("txt").style.display="none";
-    document.getElementById("mensaje").innerHTML=txtCifrado;
-    document.getElementById("copiar").style.display="show";
-    document.getElementById("copiar").style.display="inherit";
+    if (document.getElementById("texto").value.length !=0){
+        document.getElementById("txt").style.display="show";
+        document.getElementById("mensaje").innerHTML=txtCifrado;
+        document.getElementById("copiar").style.display="show";
+        document.getElementById("copiar").style.display="inherit";
+        txt.textContent="Texto Desencriptado exitosamente";
+        txt2.textContent="";
+        muñeco.src="./img/desencriptado.jpg";
+    }else{
+        muñeco.src="img/Muñeco.png";
+        txt.textContent="Ningún mensaje fue encontrado";
+        txt2.textContent="Ingrese el texto que desees encriptar o desencriptar.";
+        alert("Debes ingresar algún texto");
+        document.getElementById("mensaje").value="";
+    }
 
 }
 function copiar(){
