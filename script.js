@@ -16,6 +16,7 @@ function encriptar(){
         txt.textContent="Texto encriptado exitosamente";
         txt2.textContent="";
         muñeco.src="img/encriptado.jpg";
+        
     }else{
         muñeco.src="img/Muñeco.png";
         txt.textContent="Ningún mensaje fue encontrado";
@@ -29,6 +30,7 @@ function encriptar(){
     }
 
 }
+
 function desencriptar(){
     var texto=document.getElementById("mensaje").value.toLowerCase();
     var txtCifrado=texto.replace(/enter/igm,"e");

@@ -16,11 +16,16 @@
         
             <textarea
               name="texto"
+              style="text-transform:lowercase;"
+              value="";
+              onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
+              onkeyup="javascript:this.value=this.value.toLowerCase();"
               id="texto"
               cols="30"
               rows="10"
               class="texto"
               placeholder="Ingrese el texto aquí"
+              required
             ></textarea>
             <div class=conditions>
               <img src="img/Vector.png" class="vector" />
@@ -39,28 +44,30 @@
               <textarea
                     name="mensaje"
                     id="mensaje"
+                    style="text-transform:lowercase;"
+                    value="";
+                    onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
+                    onkeyup="javascript:this.value=this.value.toLowerCase();"
                     cols="30"
                     rows="10"
                     class="mensaje"
+                    required
                   ></textarea>
                   <button type="button" id="copy" class="copy" onclick="copiar()">
                     Copiar
                   </button>
-            </div>
-            <img src="img/Muñeco.png" id="muñeco" />
-              <div class="mensaje-encriptado" id="mensaje-encriptado">
-                <h2 id="txt">Ningún mensaje fue encontrado</h2>
-                  <p id="txt2">
-                    Ingrese el texto que desees encriptar o desencriptar.
-                  </p>
-                  
-                  
+                </div>
+                <img src="img/Muñeco.png" id="muñeco" />
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                  <h2 id="txt">Ningún mensaje fue encontrado</h2>
+                    <p id="txt2">
+                      Ingrese el texto que desees encriptar o desencriptar.
+                    </p>                    
               </div>
-          </div>
+                
+            </div>
         </div>
       </div>
-      
     </div>
-    
   </body>
 </html>

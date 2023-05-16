@@ -160,7 +160,7 @@
   padding: 1%;
   gap: 16px;
   position: absolute;
-  width: 100%;
+  width: 90%;
   top: 65%;
   text-align: center;
   background-color: rgb(247, 252, 247);
@@ -219,8 +219,6 @@
     background: rgb(238, 240, 243);
     color: rgb(241, 8, 8);
   }
-  
-
 
 @media screen and (max-width: 57.5em) {
   .container {
