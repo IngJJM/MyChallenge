@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>My First Chagenlle</title>
   </head>
   <body>
     <div class="container">
+      <img src="img/logo.png" class="logo" />
       <div class="encriptar">
+        
             <textarea
               name="texto"
               id="texto"
@@ -19,7 +22,8 @@
               class="texto"
               placeholder="Ingrese el texto aquí"
             ></textarea>
-            <div class="conditions">
+            <div class=conditions>
+              <img src="img/Vector.png" class="vector" />
               <p>Solo minusculas y sin acentos.</p>
             </div>
             <div class="buttons">
@@ -31,27 +35,31 @@
                 </button>
             </div>
           <div class="encriptado">
+            <div class="div">
+              <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    cols="30"
+                    rows="10"
+                    class="mensaje"
+                  ></textarea>
+                  <button type="button" id="copy" class="copy" onclick="copiar()">
+                    Copiar
+                  </button>
+            </div>
             <img src="img/Muñeco.png" id="muñeco" />
               <div class="mensaje-encriptado" id="mensaje-encriptado">
                 <h2 id="txt">Ningún mensaje fue encontrado</h2>
                   <p id="txt2">
                     Ingrese el texto que desees encriptar o desencriptar.
                   </p>
-                  <textarea
-                    name="mensaje"
-                    id="mensaje"
-                    cols="30"
-                    rows="10"
-                    class="mensaje"
-
-                  ></textarea>
+                  
+                  
               </div>
           </div>
         </div>
       </div>
-            <button id="copiar" type="button" name="button" onclick="copiar()">
-              !Copiar¡
-            </button>
+      
     </div>
     
   </body>

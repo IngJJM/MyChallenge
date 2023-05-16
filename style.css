@@ -6,7 +6,7 @@
   position: relative;
   width: 100vw;
   height: 100vw;
-  background: #0a7120;
+  
 }
 .logo {
   width: 100%;
@@ -15,16 +15,16 @@
 .texto {
   position: absolute;
   width: 42%;
-  height: 60%;
+  height: 50%;
   left: 12%;
-  top: 15%;
+  top: 7%;
   border: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 150%;
-  background-color: #f1f3f8;
+  background-color: #fdfdfd;
 }
 .texto::placeholder {
   color: #0a3871;
@@ -43,7 +43,11 @@
   position: absolute;
   width: 80%;
   left: 12%;
-  top: 78%;
+  top: 38%;
+}
+.vector{
+  width: 1%;
+  height: 1%;
 }
 .conditions p {
   font-family: "Inter";
@@ -62,13 +66,13 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 1% 0;
+  padding: 1%;
   position: absolute;
   float: left;
   width: 80%;
   left: 12%;
-  top: 82%;
-  background: #e0631b;
+  top: 42%;
+  
 }
 #btn-encriptar {
   align-items: center;
@@ -102,10 +106,11 @@
   text-align: center;
   background: rgb(238, 240, 243);
   color: rgb(2, 36, 66);
+  margin-left: 6%;
 }
 #btn-encriptar:hover,
 #btn-desencriptar:hover {
-  margin: 0.3%;
+  
   width: 24.5%;
   padding: 1.8%;
 }
@@ -114,13 +119,38 @@
   justify-content: center;
   position: absolute;
   width: 30%;
-  height: 90%;
+  height: 60%;
   left: 60%;
-  top: 5%;
-  background: #0733f5;
+  top: 3%;
+  background-color: rgb(247, 252, 247);
   border: none;
-  box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.08);
   border-radius: 32px;
+}
+.div {
+
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  left: 5%;
+  top: 0%;
+  background-color: rgb(247, 252, 247);
+  border: none;
+  border-radius: 32px;
+}
+.mensaje{
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  height: 85%;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: rgb(250, 249, 246);
 }
 .mensaje-encriptado {
   display: flex;
@@ -133,6 +163,7 @@
   width: 100%;
   top: 65%;
   text-align: center;
+  background-color: rgb(247, 252, 247);
 }
 .mensaje-encriptado h2{
   width: 60%;
@@ -156,49 +187,63 @@
 }
 .encriptado img {
   position: absolute;
-  width: 80%;
-  height: 50%;
-  top: 15%;
+  width: 60%;
+  height: 30%;
+  top: 32%;
 }
-
-.logoImg {
+.logo {
+  display: flex;
+  margin: 0 auto;
   margin-top: 1%;
-  margin-left: 5%;
-  float: inherit;
+  margin-left:4%;
+  width: 4%;
+  height: 4%;
 }
 .title {
   float: inherit;
   margin-left: 20%;
 }
-#copiar {
-  margin-left: 33%;
-  margin-top: 90%;
-  padding: 24px;
-  width: 40%;
-  height: 10%;
-  background: #d8def8;
-  border-radius: 24px;
-  display: none;
-}
+.copy {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    height: 12%;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-weight: 400;
+    background: rgb(238, 240, 243);
+    color: rgb(241, 8, 8);
+  }
+  
 
-@media (max-width: 57.5em) {
+
+@media screen and (max-width: 57.5em) {
   .container {
     display: flex;
     flex-direction: row;
+  }
+  .logo{
+    width: 10%;
+    height: 10%;
   }
   .encriptar {
     width: 100%;
   }
   .texto {
     width: 80%;
-    height: 60%;
-    left: 10%;
-    top: 5%;
+    height: 50%;
+    margin-left: 1%;
+    top: 11%;
   }
   .conditions {
     width: 80%;
     left: 10%;
-    top: 67%;
+    top: 58%;
   }
   .conditions p {
     font-size: 16px;
@@ -206,7 +251,7 @@
   .buttons {
     width: 80%;
     left: 10%;
-    top: 70%;
+    top: 68%;
   }
   #btn-encriptar,
   #btn-desencriptar {
@@ -215,23 +260,41 @@
   }
   #btn-encriptar:hover,
   #btn-desencriptar:hover {
-    margin: 0.3%;
-    width: 47.5%;
-    padding: 1.8%;
+    margin: 0.4%;
+    width: 48%;
+    padding: 1.9%;
   }
   .encriptado {
-    width: 80%;
-    height: 15%;
-    left: 10%;
+    width: 100%;
+    height: 55%;
+    left: 1%;
     top: 80%;
+  }
+  .div{
+    width: 90%;
+    height: 90%;
+    left: 1%;
+  }
+  .mensaje{
+      width: 80%;
+      height: 70%;
+      left: 1%;
+    
   }
  .mensaje-encriptado {
     width: 100%;
-    top: 5%;
+    top: 0%;
+    display: none;
+    visibility: hidden;
   }
  .encriptado img {
     top: 0;
     display: none;
     visibility: hidden;
+  }
+  .copy {
+    width: 90%;
+    height: 20%;
+    
   }
 }

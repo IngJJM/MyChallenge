@@ -12,18 +12,19 @@ function encriptar(){
     var txtCifrado=txtCifrado.replace(/u/igm,"ufat");
 
     if (document.getElementById("texto").value.length !=0){
-        document.getElementById("txt").style.display="show";
         document.getElementById("mensaje").innerHTML=txtCifrado;
-        document.getElementById("copiar").style.display="show";
-        document.getElementById("copiar").style.display="inherit";
         txt.textContent="Texto encriptado exitosamente";
         txt2.textContent="";
-        muñeco.src="./img/encriptado.jpg";
+        muñeco.src="img/encriptado.jpg";
     }else{
         muñeco.src="img/Muñeco.png";
         txt.textContent="Ningún mensaje fue encontrado";
         txt2.textContent="Ingrese el texto que desees encriptar o desencriptar.";
-        alert("Debes ingresar algún texto");
+        swal({
+            title:"Debes ingresar algún texto", 
+            icon:"warning",
+            button:"OK"
+        });
         document.getElementById("mensaje").value="";
     }
 
@@ -37,26 +38,27 @@ function desencriptar(){
     var txtCifrado=txtCifrado.replace(/ufat/igm,"u");
 
     if (document.getElementById("texto").value.length !=0){
-        document.getElementById("txt").style.display="show";
         document.getElementById("mensaje").innerHTML=txtCifrado;
-        document.getElementById("copiar").style.display="show";
-        document.getElementById("copiar").style.display="inherit";
         txt.textContent="Texto Desencriptado exitosamente";
         txt2.textContent="";
-        muñeco.src="./img/desencriptado.jpg";
+        muñeco.src="img/desencriptado.jpg";
     }else{
         muñeco.src="img/Muñeco.png";
         txt.textContent="Ningún mensaje fue encontrado";
         txt2.textContent="Ingrese el texto que desees encriptar o desencriptar.";
-        alert("Debes ingresar algún texto");
+        swal({
+            title:"Debes ingresar algún texto", 
+            icon:"warning",
+            button:"OK"
+        });
         document.getElementById("mensaje").value="";
     }
 
 }
-function copiar(){
-    var contenido=document.querySelector("#txt2");
-    contenido.select();
 
+function copiar(){
+    var contenido=document.getElementById("mensaje");
+    contenido.select();
+    contenido.setSelectionRange(0, 999999);
     document.execCommand("copy");
-    alert("Se ha copiado!!!")
 }
