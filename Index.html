@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>My First Chagenlle</title>
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/iconEncrip.jpg" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
       <img src="img/logo.png" class="logo" />
       <div class="encriptar">
-        
+        <textarea
+          name="texto"
+          style="text-transform: lowercase"
+          value="";
+          onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
+          onkeyup="javascript:this.value=this.value.toLowerCase();"
+          id="texto"
+          cols="30"
+          rows="10"
+          class="texto"
+          placeholder="Ingrese el texto aquí"
+          required
+        ></textarea>
+        <div class="conditions">
+          <img src="img/Vector.png" class="vector" />
+          <p>Solo minusculas y sin acentos.</p>
+        </div>
+        <div class="buttons">
+          <button type="button" id="btn-encriptar" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button type="button" id="btn-desencriptar" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+        <div class="encriptado">
+          <div class="div">
             <textarea
-              name="texto"
-              style="text-transform:lowercase;"
+              name="mensaje"
+              id="mensaje"
+              style="text-transform: lowercase"
               value="";
               onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
               onkeyup="javascript:this.value=this.value.toLowerCase();"
-              id="texto"
               cols="30"
               rows="10"
-              class="texto"
-              placeholder="Ingrese el texto aquí"
+              class="mensaje"
               required
             ></textarea>
-            <div class=conditions>
-              <img src="img/Vector.png" class="vector" />
-              <p>Solo minusculas y sin acentos.</p>
-            </div>
-            <div class="buttons">
-                <button type="button" id="btn-encriptar" onclick="encriptar()">
-                  Encriptar
-                </button>
-                <button type="button" id="btn-desencriptar" onclick="desencriptar()">
-                  Desencriptar
-                </button>
-            </div>
-          <div class="encriptado">
-            <div class="div">
-              <textarea
-                    name="mensaje"
-                    id="mensaje"
-                    style="text-transform:lowercase;"
-                    value="";
-                    onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
-                    onkeyup="javascript:this.value=this.value.toLowerCase();"
-                    cols="30"
-                    rows="10"
-                    class="mensaje"
-                    required
-                  ></textarea>
-                  <button type="button" id="copy" class="copy" onclick="copiar()">
-                    Copiar
-                  </button>
-                </div>
-                <img src="img/Muñeco.png" id="muñeco" />
-                <div class="mensaje-encriptado" id="mensaje-encriptado">
-                  <h2 id="txt">Ningún mensaje fue encontrado</h2>
-                    <p id="txt2">
-                      Ingrese el texto que desees encriptar o desencriptar.
-                    </p>                    
-              </div>
-                
-            </div>
+            <button type="button" id="copy" class="copy" onclick="copiar()">
+              Copiar
+            </button>
+          </div>
+          <img src="img/Muñeco.png" id="muñeco" />
+          <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="txt" style="display: none;">Ningún mensaje fue encontrado</h2>
+            <h2 id="txt1" style="display: none;">Texto encriptado correctamente</h2>
+            <h2 id="txt3" style="display: none;">Texto Desencriptado correctamente</h2>
+            <p id="txt2" style="display: none;">
+              Ingrese el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
         </div>
       </div>
     </div>

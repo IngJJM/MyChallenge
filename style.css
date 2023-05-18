@@ -5,17 +5,17 @@
 .container {
   position: relative;
   width: 100vw;
-  height: 100vw;
-  
+  height: 100vw;    
 }
 .logo {
-  width: 100%;
+  width: 5%;
+  height: 5%;
   float: left;
 }
 .texto {
   position: absolute;
   width: 42%;
-  height: 50%;
+  height: 25%;
   left: 12%;
   top: 7%;
   border: none;
@@ -24,10 +24,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
 }
 .texto::placeholder {
-  color: #0a3871;
+  color: #242323;
 }
 .texto:focus,
 .texto:active {
@@ -43,7 +43,7 @@
   position: absolute;
   width: 80%;
   left: 12%;
-  top: 38%;
+  top: 35%;
 }
 .vector{
   width: 1%;
@@ -71,7 +71,7 @@
   float: left;
   width: 80%;
   left: 12%;
-  top: 42%;
+  top: 40%;
   
 }
 #btn-encriptar {
@@ -119,15 +119,14 @@
   justify-content: center;
   position: absolute;
   width: 30%;
-  height: 60%;
+  height: 50%;
   left: 60%;
-  top: 3%;
+  top: 2%;
   background-color: rgb(247, 252, 247);
   border: none;
   border-radius: 32px;
 }
 .div {
-
   position: absolute;
   width: 90%;
   height: 30%;
