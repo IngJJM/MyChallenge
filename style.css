@@ -9,6 +9,8 @@
 }
 .logo {
 display: flex;
+width: auto;
+height: auto;
 }
 .text-container {
   display: flex;
@@ -246,6 +248,8 @@ display: flex;
   .logo{
 
 display: flex;
+width: auto;
+height: auto;
   }
   .encriptar {
     width: 100%;
