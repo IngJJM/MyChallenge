@@ -10,9 +10,8 @@
 }
 
 .logo {
-  display: flex;
-  width: auto;
-  height: auto;
+  width: 10%;
+  height: 10%;
 }
 
 .text-container {
@@ -271,7 +270,6 @@
 
   .logo {
 
-    display: flex;
     width: 10%;
     height: 10%;
   }
