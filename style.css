@@ -8,9 +8,7 @@
   height: 100vw;
 }
 .logo {
-  width: 5%;
-  height: 5%;
-  float: left;
+display: flex;
 }
 .text-container {
   display: flex;
@@ -247,8 +245,7 @@
   }
   .logo{
 
-    width: 10%;
-    height: 10%;
+display: flex;
   }
   .encriptar {
     width: 100%;
