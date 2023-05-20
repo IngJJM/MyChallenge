@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  overflow: hidden;
+}
 .container {
   position: relative;
   width: 100vw;
