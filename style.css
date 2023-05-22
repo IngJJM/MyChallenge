@@ -48,6 +48,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
 .logo {
   width: 10%;
   height: 10%;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 .text-container {
@@ -67,6 +69,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
   text-shadow: 1px 1px 0px #eb452b, 3px 3px 0px #efa032, 5px 5px 0px #46b59b,
     7px 7px 0px #017e7f, 9px 9px 0px #052939, 11px 11px 0px #c11a2b,
     13px 13px 0px #c11a2b, 15px 15px 0px #c11a2b, 15px 15px 0px #c11a2b;
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
 }
 
 .texto {
@@ -150,6 +154,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
   border-radius: 24px;
   color: aliceblue;
   background: rgba(10, 56, 113, 1);
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 #btn-desencriptar {
@@ -171,6 +177,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
   background: rgb(238, 240, 243);
   color: rgb(2, 36, 66);
   margin-left: 6%;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 #btn-encriptar:hover,
@@ -215,7 +223,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
   font-size: 24px;
   line-height: 150%;
   margin-bottom: 2%;
-  margin-top: %;
+  margin-top: 2%;
   background-color: transparent;
 }
 
@@ -228,7 +236,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
   gap: 16px;
   position: absolute;
   width: 90%;
-  top: 65%;
+  top: 60%;
   text-align: center;
   background-color: rgb(247, 252, 247);
 }
@@ -260,6 +268,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
   width: 60%;
   height: 30%;
   top: 32%;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 .logo {
@@ -279,8 +289,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
 .copy {
   display: flex;
   margin: 0 auto;
-  width: 50%;
-  height: 12%;
+  width: 56%;
+  height: 15%;
   border-radius: 10px;
   font-family: "Inter";
   font-size: 18px;
@@ -291,6 +301,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
   font-weight: 400;
   background: rgb(238, 240, 243);
   color: rgb(241, 8, 8);
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 @media screen and (max-width: 57.5em) {
@@ -309,6 +321,41 @@ box-shadow: 0 0 0 10px #ff2d7544,
     width: 10%;
     height: 10%;
   }
+  .bubbles{
+    position: relative;
+    display: flex;
+  
+  }
+  .bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0.4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s /var(--i));
+  }
+  .bubbles span:nth-child(even){
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+  }
+  @keyframes animate{
+    0%
+    {
+      transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+      transform: translateY(-10vh) scale(1);
+    }
+  }
+  
 
   .encriptar {
     width: 100%;
