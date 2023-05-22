@@ -435,6 +435,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
   .copy {
     display: flex;
+    position: relative;
     margin-top: 35%;
     width: 90%;
     height: 20%;
