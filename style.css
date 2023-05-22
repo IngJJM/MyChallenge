@@ -415,6 +415,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
   .mensaje {
     display: flex;
+    position: relative;
     width: 80%;
     height: 50%;
 
@@ -424,6 +425,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
   .mensaje-encriptado {
     width: 100%;
     display: flex;
+    position: absolute;
 
   }
 
@@ -435,8 +437,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
   .copy {
     display: flex;
-    position: relative;
-    margin-top: 35%;
+    position: absolute;
+    margin-top: 42%;
     width: 90%;
     height: 20%;
 
