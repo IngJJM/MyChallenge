@@ -239,6 +239,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
   top: 60%;
   text-align: center;
   background-color: rgb(247, 252, 247);
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
 .mensaje-encriptado h2 {
