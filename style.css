@@ -1,14 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background: #e6f3f0;
+    overflow: hidden;
 }
-body{
-  overflow: hidden;
+.header{
+  padding: 40px;
 }
+
+#wrapper{
+    padding-bottom: 81px;
+    min-height: calc(100% - 81px);
+    position: relative;
+}
+
 .container {
+
   position: relative;
   width: 100vw;
   height: 100vw;
+  padding:12px;
+  
+ 
+ 
 }
 .bubbles{
   position: relative;
@@ -54,7 +70,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 .text-container {
   display: flex;
-  margin-top: 1%;
+  margin-top: -1%;
   justify-content: center;
   font-family: "Inter";
   font-style: normal;
@@ -75,16 +91,16 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 .texto {
   position: absolute;
-  width: 42%;
-  height: 25%;
+  width: 40%;
+  height: 18%;
   left: 12%;
-  top: 7%;
-  border: none;
+  top: 10%;
+  border:1px dotted #0a0a0a;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 150%;
+
   background-color: transparent;
 }
 
@@ -94,8 +110,8 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 .texto:focus,
 .texto:active {
-  border: none;
-  outline: none;
+  border:1px dotted #0a0a0a;
+  outline: black;
 }
 
 .conditions {
@@ -107,7 +123,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
   position: absolute;
   width: 80%;
   left: 12%;
-  top: 35%;
+  top: 29%;
 }
 
 .vector {
@@ -136,37 +152,44 @@ box-shadow: 0 0 0 10px #ff2d7544,
   padding: 1%;
   position: absolute;
   float: left;
-  width: 80%;
+  width: 56%;
+  height: 15%;
   left: 12%;
-  top: 40%;
+  top: 31%;
+  
 }
 
 #btn-encriptar {
   align-items: center;
+  display: flex;
+  position: relative;
   justify-content: center;
   padding: 2%;
   gap: 8px;
-  width: 25%;
+  width: 20%;
+  height: 15%;
   font-family: "Inter";
   font-size: 18px;
   line-height: 19px;
   text-align: center;
-  border-radius: 24px;
+  border-radius: 10px;
   color: aliceblue;
-  background: rgba(10, 56, 113, 1);
+  background: rgb(112, 116, 122);
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
 
 #btn-desencriptar {
   display: flex;
+  position: relative;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding: 2%;
   gap: 8px;
-  width: 25%;
-  border-radius: 24px;
+  width: 20%;
+  height: 15%;
+  border-radius: 10px;
   font-family: "Inter";
   font-size: 18px;
   line-height: 19px;
@@ -174,17 +197,53 @@ box-shadow: 0 0 0 10px #ff2d7544,
   font-family: "Inter";
   font-weight: 400;
   text-align: center;
-  background: rgb(238, 240, 243);
-  color: rgb(2, 36, 66);
-  margin-left: 6%;
+  color: aliceblue;
+  background: rgb(112, 116, 122);
+  margin-left: 2%;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
+}
+#btn-limpiar {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 20%;
+  height: 15%;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 400;
+  text-align: center;
+  color: aliceblue;
+  background: rgb(112, 116, 122);
+  margin-left: 2%;
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
 
 #btn-encriptar:hover,
-#btn-desencriptar:hover {
-  width: 24.5%;
-  padding: 1.8%;
+#btn-desencriptar:hover,
+#btn-limpiar:hover {
+  color:rgb(12, 12, 12);
+  transform: scale(1.1);
+ 
+ 
+}
+.encriptado {
+  width: 5%;
+  height: 5%;
+  display: flex;
+  position: absolute;
+  left: 70%;
+  padding: 0%;
+  margin: 0%;
 }
 
 .encriptado {
@@ -202,7 +261,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 .div {
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 30%;
   left: 5%;
   top: 0%;
@@ -214,15 +273,13 @@ box-shadow: 0 0 0 10px #ff2d7544,
 .mensaje {
   display: flex;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   height: 85%;
-  border: none;
+  border:1px dotted #0a0a0a;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 150%;
-  margin-bottom: 2%;
   margin-top: 2%;
   background-color: transparent;
 }
@@ -242,13 +299,23 @@ box-shadow: 0 0 0 10px #ff2d7544,
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
+.mensaje::placeholder {
+  color: #242323;
+}
+
+.mensaje:focus,
+.mensaje:active {
+  border:1px dotted #0a0a0a;
+  outline: black;
+}
 
 .mensaje-encriptado h2 {
+  margin-right: -13%;
   width: 60%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 120%;
   text-align: center;
   color: #343a40;
@@ -256,24 +323,26 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 .mensaje-encriptado p {
   width: 80%;
+  margin-right: -13%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 150%;
   text-align: center;
   color: #495057;
+ 
 }
 
 .encriptado img {
-  position: absolute;
+  position:relative;
+  margin-right: -13%;
   width: 60%;
   height: 30%;
   top: 32%;
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
-
 .logo {
   display: flex;
   margin: 0 auto;
@@ -282,17 +351,17 @@ box-shadow: 0 0 0 10px #ff2d7544,
   width: 4%;
   height: 4%;
 }
-
 .title {
   float: inherit;
   margin-left: 20%;
 }
-
 .copy {
   display: flex;
-  margin: 0 auto;
+  position: relative;
+  margin: 0%;
   width: 56%;
   height: 15%;
+  top: 3%;
   border-radius: 10px;
   font-family: "Inter";
   font-size: 18px;
@@ -301,23 +370,242 @@ box-shadow: 0 0 0 10px #ff2d7544,
   justify-content: center;
   font-family: "Inter";
   font-weight: 400;
+  left: 25%;
   background: rgb(238, 240, 243);
   color: rgb(241, 8, 8);
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
+.copy:hover{
+  color: rgba(10, 56, 113, 1);
+  transform: scale(1.1);
+}
 
-@media screen and (max-width: 57.5em) {
-  .body{
-    overflow: hidden;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
+.pie{
+  background: #bfb8f7;
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
+  
+}
+.redes{
+  display:contents;
+  position: relative;
+  justify-content: center;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
+  
+}
+
+.redes a{
+    font-size: 15px;  
+    justify-content: center;
+    margin: .8%;
+    
+}
+.fb{
+    background: rgb(0, 81, 255);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+.li{
+    background: rgb(0, 102, 255);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+.git{
+    background: rgb(14, 13, 13);
+    padding: 8px;
+    border-radius: 50px;
+    color: rgb(252, 249, 249);
+}
+.redes p{
+  display: flex;
+  font-family: fantasy;
+  justify-content: center;
+  font-size: 15px;
+  font-style: normal;
+  color: #e71a1a;
+  width: 70%;
+  opacity: 0.8;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 0.8%;
+}
+/*Diseño responsivo celulares*/
+@media screen and (max-width: 1700px){
+
+  
+}
+
+/*Diseño responsivo tablets*/
+@media all and (max-width: 1200px) {
+
+
 
   .text-container {
+    display: flex;
+    position: relative;
+    font-size: 40px;
+    top:2%;
+
+
+  }
+
+  .logo {
+    display: flex;
+    position: relative;
+    width: 10%;
+    height: 10%;
+    top:-7%;
+  }
+  .bubbles{
+    position: relative;
+    display: flex;
+  }
+  
+
+  .encriptar {
+    width: 100%;
+
+  }
+
+  .texto {
+    width: 70%;
+    height: 25%;
+    margin-left: 1%;
+    top: 18%;
+    font-size:14px;
+  }
+
+  .conditions {
+    width: 80%;
+    left: 10%;
+    top: 44%;
+  }
+
+  .conditions p {
+    font-size: 16px;
+  }
+  .vector {
+  width: 3%;
+  height: 3%;
+}
+
+  .buttons {
+    width: 70%;
+    left: 13%;
+    top: 50%;
+  }
+
+  #btn-encriptar,
+  #btn-desencriptar,
+  #btn-limpiar {
+    width: 35%;
+    height: 25%;
+    font-size:12px;
+    border-radius: 7px;
+  }
+
+  #btn-encriptar:hover,
+  #btn-desencriptar:hover {
+    color:rgb(12, 12, 12);
+    transform: scale(1);
+  }
+
+  .encriptado {
+   
+    width: 150%;
+    height: 55%;
+    left: 0%;
+    top: 55%;
+   
+  }
+
+  .div {
+
+    width: 100%;
+    height: 90%;
+    
+   
+  }
+
+  .mensaje {
+   
+    width: 48%;
+    height: 45%;
+    margin-left: 3%;
+    top: 21%;
+    font-size: 14px;
+
+
+  }
+
+  .mensaje-encriptado {
+    width: 100%;
+    margin-left:-50%;
+    font-size:14px;
+    margin-top:-3%;
+    display: flex;   
+
+  }
+  #txt1{
+    margin-top:7%;
+    margin-left:5%;
+  }
+    #txt3{
+    margin-top:7%;
+    margin-left:5%;
+  }
+
+
+  .encriptado img {
+    top: 0;
     display: none;
+    visibility: hidden;
+  }
+
+  .copy {
+    display: flex;
+    position: absolute;
+    margin-top: 19%;
+    margin-left: -4%;
+    width: 15%;
+    height: 9%;
+    font-size:12px;
+    border-radius: 7px;
+
+  }
+  .pie{
+    background: #bfb8f7;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+    
+  }
+}
+
+/*Diseño responsivo tablets*/
+@media all and (max-width: 720px) {
+
+
+
+  .text-container {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    top:2%;
 
   }
 
@@ -334,19 +622,21 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
   .encriptar {
     width: 100%;
+
   }
 
   .texto {
-    width: 80%;
-    height: 50%;
+    width: 70%;
+    height: 25%;
     margin-left: 1%;
-    top: 11%;
+    top: 28%;
+    font-size:14px;
   }
 
   .conditions {
     width: 80%;
     left: 10%;
-    top: 58%;
+    top: 55%;
   }
 
   .conditions p {
@@ -354,54 +644,70 @@ box-shadow: 0 0 0 10px #ff2d7544,
   }
 
   .buttons {
-    width: 80%;
-    left: 10%;
+    width: 70%;
+    left: 13%;
     top: 68%;
   }
 
   #btn-encriptar,
-  #btn-desencriptar {
-    width: 48%;
-    border-radius: 16px;
+  #btn-desencriptar,
+  #btn-limpiar {
+    width: 35%;
+    height: 25%;
+    font-size:12px;
+    border-radius: 7px;
   }
 
   #btn-encriptar:hover,
   #btn-desencriptar:hover {
-
-    width: 48%;
-    padding: 1.9%;
+    color:rgb(12, 12, 12);
+    transform: scale(1);
   }
 
   .encriptado {
-    width: 100%;
+   
+    width: 150%;
     height: 55%;
-    left: 1%;
+    left: 0%;
     top: 80%;
+   
   }
 
   .div {
 
-    width: 90%;
+    width: 100%;
     height: 90%;
-    left: 1%;
+    
+   
   }
 
   .mensaje {
-    display: flex;
-    position: relative;
-    width: 80%;
-    height: 50%;
+   
+    width: 48%;
+    height: 55%;
+    margin-left: 3%;
+    top: 61%;
+    font-size: 14px;
 
 
   }
 
   .mensaje-encriptado {
     width: 100%;
-    display: flex;
-    position: absolute;
+    margin-left:-48%;
+    font-size:14px;
+    margin-top:5%;
+    display: flex;   
 
   }
-
+  #txt1{
+    margin-top:7%;
+    margin-left:5%;
+  }
+    #txt3{
+    margin-top:7%;
+    margin-left:5%;
+  }
   .encriptado img {
     top: 0;
     display: none;
@@ -411,9 +717,23 @@ box-shadow: 0 0 0 10px #ff2d7544,
   .copy {
     display: flex;
     position: absolute;
-    margin-top: 42%;
-    width: 90%;
-    height: 20%;
+    margin-top: 22%;
+    margin-left: -4%;
+    width: 15%;
+    height: 9%;
+    font-size:12px;
+    border-radius: 7px;
 
+  }
+  .pie{
+    background: #bfb8f7;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+   
+    font-size: 2px;
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+    
   }
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/646ac4fad6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
     <title>Encriptador</title>
@@ -12,48 +16,48 @@
   <body>
     <div class="container">
       <div class="bubbles">
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:27;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:29;"></span>
-        <span style="--i:30;"></span>
-        <span style="--i:31;"></span>
-        <span style="--i:11;"></span>
-        <span style="--i:12;"></span>
-        <span style="--i:13;"></span>
-        <span style="--i:14;"></span>
-        <span style="--i:15;"></span>
-        <span style="--i:16;"></span>
-        <span style="--i:17;"></span>
-        <span style="--i:18;"></span>
-        <span style="--i:19;"></span>
-        <span style="--i:20;"></span>
-        <span style="--i:21;"></span>
-        <span style="--i:22;"></span>
-        <span style="--i:23;"></span>
-        <span style="--i:24;"></span>
-        <span style="--i:25;"></span>
-        <span style="--i:26;"></span>
-        <span style="--i:27;"></span>
-        <span style="--i:28;"></span>
-        <span style="--i:29;"></span>
-        <span style="--i:30;"></span>
-        <span style="--i:31;"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 22"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 24"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 26"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 29"></span>
+        <span style="--i: 30"></span>
+        <span style="--i: 31"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 22"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 24"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 26"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 29"></span>
+        <span style="--i: 30"></span>
+        <span style="--i: 31"></span>
       </div>
       <h1 class="text-container">Encriptador/Desencriptador</h1>
       <img src="img/Logo.png" class="logo" />
@@ -61,8 +65,10 @@
         <textarea
           name="texto"
           style="text-transform: lowercase"
-          value="";
-          onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
+          value=""
+          ;
+          onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233"
+          ;
           onkeyup="javascript:this.value=this.value.toLowerCase();"
           id="texto"
           cols="30"
@@ -77,10 +83,14 @@
         </div>
         <div class="buttons">
           <button type="button" id="btn-encriptar" onclick="encriptar()">
+            <img src="img/encriptador.png" class="encriptado" alt="x" />
             Encriptar
           </button>
           <button type="button" id="btn-desencriptar" onclick="desencriptar()">
             Desencriptar
+          </button>
+          <button type="button" id="btn-limpiar" onclick="limpiar()">
+            Limpiar
           </button>
         </div>
         <div class="encriptado">
@@ -89,6 +99,7 @@
               name="mensaje"
               id="mensaje"
               style="text-transform: lowercase"
+              placeholder="imesngrentersenter tenterxtober aiqufatimes"
               value="";
               onkeypress="return event.charCode != 243 && event.charCode != 237 && event.charCode != 250 && event.charCode != 180 && event.charCode != 225 && event.charCode != 233";
               onkeyup="javascript:this.value=this.value.toLowerCase();"
@@ -97,21 +108,35 @@
               class="mensaje"
               required
             ></textarea>
-            <button type="button" id="copy" class="copy" onclick="copiar()">
+            <button type="button" id="copy" class="copy" style="display:none" onclick="copiar()">
               Copiar
             </button>
           </div>
           <img src="img/Muñeco.png" id="muñeco" />
           <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="txt" style="display: none;">Ningún mensaje fue encontrado</h2>
-            <h2 id="txt1" style="display: none;">Texto encriptado correctamente</h2>
-            <h2 id="txt3" style="display: none;">Texto Desencriptado correctamente</h2>
-            <p id="txt2" style="display: none;">
+            <h2 id="txt" style="display: none">
+              Ningún mensaje fue encontrado
+            </h2>
+            <h2 id="txt1" style="display: none">
+              Texto encriptado correctamente
+            </h2>
+            <h2 id="txt3" style="display: none">
+              Texto Desencriptado correctamente
+            </h2>
+            <p id="txt2" style="display: none">
               Ingrese el texto que desees encriptar o desencriptar.
             </p>
           </div>
         </div>
       </div>
     </div>
+    <footer class="pie">
+      <div class="redes">
+        <a href="https://www.facebook.com/ada.jmzmartz/" class="fb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/IngJJM   " class="git" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jimena-jim%C3%A9nez-mart%C3%ADnez-26a3a3188?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B81hUr34gSACXbrRnl2KY7w%3D%3D" class="li" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <p>Jimena Jiménez Martínez ©2023 Ing.Informática.</p>
+      </div>
+    </footer>
   </body>
 </html>

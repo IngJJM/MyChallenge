@@ -20,6 +20,7 @@ function encriptar() {
       document.getElementById("txt1").style.display="block";
       document.getElementById("txt2").style.display="none";
       document.getElementById("txt3").style.display="none";
+      document.getElementById("copy").style.display="block";
       muñeco.src = "img/encriptado.jpg";
       return;
     } else {
@@ -29,6 +30,7 @@ function encriptar() {
       document.getElementById("txt2").style.display="block";
       document.getElementById("txt3").style.display="none";
       document.getElementById("mensaje").value = "";
+      document.getElementById("copy").style.display="none";
     }
   }
   
@@ -48,6 +50,7 @@ function encriptar() {
       document.getElementById("txt1").style.display="none";
       document.getElementById("txt2").style.display="none";
       document.getElementById("txt3").style.display="block";
+      document.getElementById("copy").style.display="block";
       muñeco.src = "img/desencriptado.jpg";
       return;
     } else {
@@ -57,6 +60,7 @@ function encriptar() {
       document.getElementById("txt1").style.display="none";
       document.getElementById("txt2").style.display="block";
       document.getElementById("txt3").style.display="none";
+      document.getElementById("copy").style.display="none";
     }
   }
   
@@ -65,4 +69,16 @@ function encriptar() {
     contenido.select();
     contenido.setSelectionRange(0, 999999);
     document.execCommand("copy");
+  }
+   function limpiar() {
+    document.getElementsByClassName("texto")[0].value = "";
+    document.getElementsByClassName("mensaje")[0].value = "";
+    muñeco.src = "img/Muñeco.png";
+    document.getElementById("txt").style.display="none";
+    document.getElementById("txt1").style.display="none";
+    document.getElementById("txt2").style.display="none";
+    document.getElementById("txt3").style.display="none";
+    document.getElementById("copy").style.display="none";
+    copiar().reset;
+    
   }
