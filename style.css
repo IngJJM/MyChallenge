@@ -327,9 +327,10 @@ box-shadow: 0 0 0 10px #ff2d7544,
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 150%;
+ margin-top: -3%;
   text-align: center;
   color: #495057;
+ 
  
 }
 
