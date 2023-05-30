@@ -3,7 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    background: #e6f3f0;
+    background: #f1f5f4;
     overflow: hidden;
 }
 .header{
@@ -146,87 +146,86 @@ box-shadow: 0 0 0 10px #ff2d7544,
   height: 15%;
   left: 12%;
   top: 31%;
+  gap: 40px;
   
 }
 
 #btn-encriptar {
-cursor: pointer;
---c:#03105c;;
-color: rgb(129, 126, 126);
-font-size: 14px;
-border: 0.3em solid var(--c);
-border-radius: 0.5em;
-width: 11.3em;
-height: 2.3em;
-text-transform: uppercase;
-font-weight: bold;
-font-family: sans-serif;
-letter-spacing: 0.1em;
-text-align: center;
-line-height: 1.8em;
-position: relative;
-overflow: hidden;
-z-index: 1;
-transition: 0.5s;
-margin: 1em;
-filter:brightness(1.1);
-mix-blend-mode: multiply;
-}
-
-#btn-desencriptar {
-  cursor: pointer;
-  --c:#03105c;;
-  color: rgb(129, 126, 126);
-  font-size: 14px;
-  border: 0.3em solid var(--c);
-  border-radius: 0.5em;
-  width: 11.3em;
+  width: 8.5em;
   height: 2.3em;
-  text-transform: uppercase;
+  margin: 0.5em;
+  background: black;
+  color: #f1f5f4;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 16px;
   font-weight: bold;
-  font-family: sans-serif;
-  letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 1.8em;
+  cursor: pointer;
   position: relative;
-  overflow: hidden;
   z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
-    filter:brightness(1.1);
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
+}
+#btn-desencriptar {
+  width: 8.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  background: black;
+  color: #f1f5f4;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
 #btn-limpiar {
-  cursor: pointer;
-  --c:#03105c;
-  color: rgb(129, 126, 126);
-  font-size: 14px;
-  border: 0.3em solid var(--c);
-  border-radius: 0.5em;
-  width: 11.3em;
+  width: 8.5em;
   height: 2.3em;
-  text-transform: uppercase;
+  margin: 0.5em;
+  background: black;
+  color: #f1f5f4;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 16px;
   font-weight: bold;
-  font-family: sans-serif;
-  letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 1.8em;
+  cursor: pointer;
   position: relative;
-  overflow: hidden;
   z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
 
 #btn-encriptar:hover,
 #btn-desencriptar:hover,
-#btn-limpiar:hover {
+#btn-limpiar:hover, #copy:hover{
   color:rgb(12, 12, 12);
-  transform: scale(1.1);
- 
- 
+  
+}
+#btn-encriptar:after,#btn-desencriptar:after,
+#btn-limpiar:after,#copy:after{
+  content: "";
+  background: #f1f5f4;
+  position: absolute;
+  z-index: -1;
+  left: -10%;
+  right: -10%;
+  top:0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0,1);
+  transition: all 0.5s;
+  
+
+}
+#btn-encriptar:hover:after,#btn-desencriptar:hover:after,
+#btn-limpiar:hover:after,#copy:hover:after{
+  transform:skewX(-50deg) scale(1,1);
+  -webkit-transition:all 0.5s;
+  transition:all 0.5s;
+
 }
 .encriptado {
   width: 5%;
@@ -349,34 +348,23 @@ mix-blend-mode: multiply;
   margin-left: 20%;
 }
 .copy {
-  cursor: pointer;
-  --c:#03105c;;
-  color: rgb(129, 126, 126);
-  font-size: 14px;
-  border: 0.3em solid var(--c);
-  border-radius: 0.5em;
-  width: 11.3em;
+  width: 8.5em;
   height: 2.3em;
-  text-transform: uppercase;
+  margin: 0.5em;
+  background: black;
+  color: #f1f5f4;
+  border:none;
+  border-radius: 0.625em;
+  font-size: 16px;
   font-weight: bold;
-  font-family: sans-serif;
-  letter-spacing: 0.1em;
-  text-align: center;
-  line-height: 1.8em;
+  cursor: pointer;
   position: relative;
-  overflow: hidden;
   z-index: 1;
-  transition: 0.5s;
-  margin: 1em;
   filter:brightness(1.1);
   mix-blend-mode: multiply;
-  right: -25%;
-  top: -5%;
+  right: -35%;
 }
-.copy:hover{
-  color:rgb(12, 12, 12);
-  transform: scale(1.1);
-}
+
 
 .pie{
   background: #bfb8f7;
