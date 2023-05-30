@@ -431,7 +431,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
   justify-content: center;
   font-size: 15px;
   font-style: normal;
-  color: #e71a1a;
+  color: white;
   width: 70%;
   opacity: 0.8;
   order: 1;
@@ -603,9 +603,9 @@ body{
     position: relative;
     font-size: 25px;
     top:6%;
-    text-shadow: 1px 1px 0px #eb452b, 2px 2px 0px #efa032, 3px 3px 0px #46b59b,
-    4px 4px 0px #017e7f, 5px 5px 0px #052939, 6px 6px 0px #c11a2b,
-    7px 7px 0px #c11a2b, 8px 8px 0px #c11a2b, 8px 8px 0px #c11a2b;
+    text-shadow: 1px 1px 0px #eb452b, 1px 1px 0px #efa032, 2px 2px 0px #46b59b,
+    3px 3px 0px #017e7f, 4px 4px 0px #052939, 5px 5px 0px #c11a2b,
+    6px 6px 0px #c11a2b, 7px 7px 0px #c11a2b, 8px 8px 0px #c11a2b;
     filter:brightness(1.1);
     mix-blend-mode: multiply;
 
@@ -762,13 +762,53 @@ body{
 
   }
   .pie{
-    background: #bfb8f7;
-    width: 100%;
-    height: 8%;
-    position: absolute;
-    font-size: 2px;
+  display: flex;
+  font-family: fantasy;
+  justify-content: center;
+  font-size: 15px;
+  font-style: normal;
+  color: white;
+  width: 100%;
+  opacity: 0.8;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 0.8%;
+  filter:brightness(1.1);
+  mix-blend-mode: multiply;
+    
+  }
+  .redes{
+    display:contents;
+    position: relative;
+    justify-content: center;
     filter:brightness(1.1);
     mix-blend-mode: multiply;
     
   }
+  
+  .redes a{
+      font-size: 15px;  
+      justify-content: center;
+      margin: .8%;
+      
+  }
+  .fb{
+      background: rgb(0, 81, 255);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+  }
+  .li{
+      background: rgb(0, 102, 255);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+  }
+  .git{
+      background: rgb(14, 13, 13);
+      padding: 8px;
+      border-radius: 50px;
+      color: rgb(252, 249, 249);
+  }
+
 }
