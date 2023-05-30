@@ -9,13 +9,6 @@ body {
 .header{
   padding: 40px;
 }
-
-#wrapper{
-    padding-bottom: 81px;
-    min-height: calc(100% - 81px);
-    position: relative;
-}
-
 .container {
 
   position: relative;
@@ -72,11 +65,9 @@ box-shadow: 0 0 0 10px #ff2d7544,
   display: flex;
   margin-top: -1%;
   justify-content: center;
-  font-family: "Inter";
   font-style: normal;
   text-align: center;
   font-size: 3rem;
-  text-align: center;
   height: 5vh;
   line-height: 5vh;
   color: #fcedd8e5;
