@@ -424,9 +424,9 @@ mix-blend-mode: multiply;
 }
 .redes p{
   display: flex;
-  font-family: fantasy;
+  font-family: 'Franklin Gothic Medium';
   justify-content: center;
-  font-size: 15px;
+  font-size: 19px;
   font-style: normal;
   color: white;
   width: 70%;
