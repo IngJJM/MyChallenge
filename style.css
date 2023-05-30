@@ -3,11 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    background: #f1f5f4;
     overflow: hidden;
-}
-.header{
-  padding: 40px;
 }
 .container {
 
@@ -673,17 +669,11 @@ body{
   #btn-encriptar,
   #btn-desencriptar,
   #btn-limpiar {
-    width: 35%;
-    height: 25%;
+    width: 47%;
+    height: 37%;
     font-size:12px;
     border-radius: 7px;
-    margin: -3%;
-  }
-
-  #btn-encriptar:hover,
-  #btn-desencriptar:hover {
-    color:rgb(12, 12, 12);
-    transform: scale(1);
+    margin: -4%;
   }
 
   .encriptado {
@@ -737,19 +727,17 @@ body{
   }
 
   .copy {
-    display: flex;
-    position: absolute;
-    margin-top: 22%;
-    margin-left: -4%;
-    width: 15%;
-    height: 9%;
+    display: block;
+    width: 47%;
+    height: 37%;
     font-size:12px;
     border-radius: 7px;
+    margin: -4%;
 
   }
   .pie{
   display: flex;
-  font-family: fantasy;
+  font-family: 'Franklin Gothic Medium';
   justify-content: center;
   font-size: 15px;
   font-style: normal;
