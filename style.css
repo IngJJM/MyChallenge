@@ -142,7 +142,7 @@ box-shadow: 0 0 0 10px #ff2d7544,
   padding: 1%;
   position: absolute;
   float: left;
-  width: 56%;
+  width: 40%;
   height: 15%;
   left: 12%;
   top: 31%;
@@ -150,70 +150,72 @@ box-shadow: 0 0 0 10px #ff2d7544,
 }
 
 #btn-encriptar {
-  align-items: center;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  padding: 2%;
-  gap: 8px;
-  width: 20%;
-  height: 15%;
-  font-family: "Inter";
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  border-radius: 10px;
-  color: aliceblue;
-  background: rgb(112, 116, 122);
-  filter:brightness(1.1);
-  mix-blend-mode: multiply;
+cursor: pointer;
+--c:#03105c;;
+color: rgb(129, 126, 126);
+font-size: 14px;
+border: 0.3em solid var(--c);
+border-radius: 0.5em;
+width: 11.3em;
+height: 2.3em;
+text-transform: uppercase;
+font-weight: bold;
+font-family: sans-serif;
+letter-spacing: 0.1em;
+text-align: center;
+line-height: 1.8em;
+position: relative;
+overflow: hidden;
+z-index: 1;
+transition: 0.5s;
+margin: 1em;
+filter:brightness(1.1);
+mix-blend-mode: multiply;
 }
 
 #btn-desencriptar {
-  display: flex;
+  cursor: pointer;
+  --c:#03105c;;
+  color: rgb(129, 126, 126);
+  font-size: 14px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 11.3em;
+  height: 2.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.8em;
   position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
-  gap: 8px;
-  width: 20%;
-  height: 15%;
-  border-radius: 10px;
-  font-family: "Inter";
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  font-family: "Inter";
-  font-weight: 400;
-  text-align: center;
-  color: aliceblue;
-  background: rgb(112, 116, 122);
-  margin-left: 2%;
-  filter:brightness(1.1);
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+    filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
 #btn-limpiar {
-  display: flex;
+  cursor: pointer;
+  --c:#03105c;
+  color: rgb(129, 126, 126);
+  font-size: 14px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 11.3em;
+  height: 2.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.8em;
   position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
-  gap: 8px;
-  width: 20%;
-  height: 15%;
-  border-radius: 10px;
-  font-family: "Inter";
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  font-family: "Inter";
-  font-weight: 400;
-  text-align: center;
-  color: aliceblue;
-  background: rgb(112, 116, 122);
-  margin-left: 2%;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
   filter:brightness(1.1);
   mix-blend-mode: multiply;
 }
@@ -347,28 +349,32 @@ box-shadow: 0 0 0 10px #ff2d7544,
   margin-left: 20%;
 }
 .copy {
-  display: flex;
+  cursor: pointer;
+  --c:#03105c;;
+  color: rgb(129, 126, 126);
+  font-size: 14px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 11.3em;
+  height: 2.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 1.8em;
   position: relative;
-  margin: 0%;
-  width: 56%;
-  height: 15%;
-  top: 3%;
-  border-radius: 10px;
-  font-family: "Inter";
-  font-size: 18px;
-  line-height: 19px;
-  align-items: center;
-  justify-content: center;
-  font-family: "Inter";
-  font-weight: 400;
-  left: 25%;
-  background: rgb(238, 240, 243);
-  color: rgb(241, 8, 8);
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
   filter:brightness(1.1);
   mix-blend-mode: multiply;
+  right: -25%;
+  top: -5%;
 }
 .copy:hover{
-  color: rgba(10, 56, 113, 1);
+  color:rgb(12, 12, 12);
   transform: scale(1.1);
 }
 
@@ -592,7 +598,7 @@ body{
   .text-container {
     display: flex;
     position: relative;
-    font-size: 25px;
+    font-size: 28px;
     top:6%;
     text-shadow: 1px 1px 0px #eb452b, 1px 1px 0px #efa032, 2px 2px 0px #46b59b,
     3px 3px 0px #017e7f, 4px 4px 0px #052939, 5px 5px 0px #c11a2b,
