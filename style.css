@@ -601,19 +601,58 @@ body{
   .text-container {
     display: flex;
     position: relative;
-    font-size: 30px;
-    top:2%;
+    font-size: 25px;
+    top:6%;
+    text-shadow: 1px 1px 0px #eb452b, 2px 2px 0px #efa032, 3px 3px 0px #46b59b,
+    4px 4px 0px #017e7f, 5px 5px 0px #052939, 6px 6px 0px #c11a2b,
+    7px 7px 0px #c11a2b, 8px 8px 0px #c11a2b, 8px 8px 0px #c11a2b;
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
 
   }
 
   .logo {
+    display:flex;
+    position: relative;
 
     width: 10%;
     height: 10%;
+    right:1%;
+    top:-17%;
   }
   .bubbles{
     position: relative;
     display: flex;
+  
+  }
+  .bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0.4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s /var(--i));
+  }
+  .bubbles span:nth-child(even){
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+  }
+  @keyframes animate{
+    0%
+    {
+      transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+      transform: translateY(-10vh) scale(1);
+    }
   }
   
 
