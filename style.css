@@ -441,7 +441,9 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 /*Diseño responsivo tablets*/
 @media all and (max-width: 1200px) {
-
+body{
+  overflow: hidden;
+}
 
 
   .text-container {
@@ -593,6 +595,9 @@ box-shadow: 0 0 0 10px #ff2d7544,
 
 /*Diseño responsivo celulares*/
 @media all and (max-width: 720px) {
+  body{
+    overflow: hidden;
+  }
   .text-container {
     display: flex;
     position: relative;
