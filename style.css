@@ -677,6 +677,7 @@ body{
     height: 25%;
     font-size:12px;
     border-radius: 7px;
+    margin: -3%;
   }
 
   #btn-encriptar:hover,
